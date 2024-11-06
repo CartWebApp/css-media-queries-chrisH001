@@ -63,13 +63,41 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px){
+  .third, 
+  .quarter {
+    width: calc(97% / 2);
+  }
+  
+  [class^="box"]:last-child {
+   /* width:98%;*/
+    flex-grow: 1;
+  }
 
-
+  .flex-container {
+    height: fit-content;
+  }
+}
 
 
 /* Mobile Styles*/
+@media screen and (max-width: 520px){
+  [class^="box"]{
+    width: 97%;
+  }
+}
 
+/*use percentages rather than pixels for easier fitting*/
 
+/*also very efficient since it's all in one container*/
+
+/*comma allows for multiple things to be adjusted*/
+
+/*use a max width size of 520 since that's the average for phone screen sizes*/
+
+/*for tablets use a max width of 1024*/
+
+/*flex grow is a powerful tool since it can efficiently control how much items can grow inside of a container*/
 
 
 
